@@ -8,7 +8,7 @@ EXECUTED_STATE = 'EXECUTED'
 
 def getPaymentType(payment: str):
 	if 'счет' in payment.lower():
-		return f'{payment[:5]}**{payment[-2:]}'
+		return f'{payment[:5]}**{payment[-4:]}'
 	else:
 		payment_type = f'{payment.split()[len(payment.split()) - 1]}'
 		card_type = f'{payment.replace(f" {payment_type}", "")}'
