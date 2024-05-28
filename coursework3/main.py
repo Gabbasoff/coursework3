@@ -2,7 +2,7 @@ from datetime import datetime
 from operator import itemgetter
 import operator
 
-FILE = 'operations.json'
+FILE = '../data/operations.json'
 EXECUTED_STATE = 'EXECUTED'
 
 
